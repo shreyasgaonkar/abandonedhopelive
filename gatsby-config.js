@@ -5,11 +5,29 @@ const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-  },
+      title: "AbandonedHopeLive - The world’s first remote band",
+      author: "Admin",
+      description: "The world’s first remote band. Follow us for covers & original tracks.",
+      siteUrl: "https://abandonedhopelive.gatsbyjs.io/",
+      social: [
+        {
+          name: "twitter",
+          url: "https://twitter.com/_AbandonedHope",
+        },
+        {
+          name: "facebook",
+          url: "https://www.facebook.com/AbandonedHopeLive",
+        },
+        {
+          name: "instagram",
+          url: "https://www.instagram.com/abandonedhopelive/",
+        },
+        {
+          name: "youtube",
+          url: "https://www.youtube.com/AbandonedHopeLive",
+        }
+      ],
+    },
   flags: {
     FAST_DEV: true,
   },
@@ -28,9 +46,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `AbandonedHopeLive - The world’s first remote band`,
+        short_name: `AbandonedHopeLive`,
+        description: `The world’s first remote band. Follow us for covers & original tracks. DM us for requests & collaborations`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
